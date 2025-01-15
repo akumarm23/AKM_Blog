@@ -701,3 +701,667 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 44ms (Views: 4.4ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/articles/1" for 127.0.0.1 at 2025-01-15 01:11:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AkmBlogApp'*/[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='AkmBlogApp',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | GC: 1.2ms)
+Completed 200 OK in 122ms (Views: 17.1ms | ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 23.6ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2025-01-15 01:12:02 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 2 LIMIT 1 /*action='show',application='AkmBlogApp',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 1.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2025-01-15 01:12:06 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 3 LIMIT 1 /*action='show',application='AkmBlogApp',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 110ms (Views: 3.9ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 2.1ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2025-01-15 01:12:10 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 2 LIMIT 1 /*action='show',application='AkmBlogApp',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.6ms)
+Completed 200 OK in 46ms (Views: 2.7ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:12:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/article" for 127.0.0.1 at 2025-01-15 01:12:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/article"):
+  
+Started GET "/home" for 127.0.0.1 at 2025-01-15 01:12:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/about" for 127.0.0.1 at 2025-01-15 01:12:30 -0500
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | GC: 0.0ms)
+Completed 200 OK in 97ms (Views: 8.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2025-01-15 01:12:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/about" for 127.0.0.1 at 2025-01-15 01:13:44 -0500
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | GC: 0.6ms)
+Completed 200 OK in 40ms (Views: 5.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-15 01:13:48 -0500
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-15 01:17:37 -0500
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 4.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2025-01-15 01:17:40 -0500
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 67ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:17:44 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:20:36 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.3ms)
+Completed 200 OK in 37ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:21:56 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.5ms)
+Completed 200 OK in 36ms (Views: 4.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:23:59 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+    <tr>
+      <td> <%= article.title %> </td>
+      <td> <%= article.description %> </td>
+      <td>Placeholder</td>
+    </tr>
+  </tbody>
+</table>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+    <tr>
+      <td> <%= article.title %> </td>
+      <td> <%= article.description %> </td>
+      <td>Placeholder</td>
+    </tr>
+  </tbody>
+</table>
+):
+1:    <h1>Articles List Page</h1>
+2:    
+3:    <table>
+4:      <thead>
+5:        <tr>
+6:          <th>Title</th>
+7:          <th>Description</th>
+8:          <th>Actions</th>
+9:        </tr>
+10:      </thead>
+11:    
+12:      <tbody>
+13:        <% @articles.each do |article| %>
+14:        <tr>
+15:          <td> <%= article.title %> </td>
+16:          <td> <%= article.description %> </td>
+17:          <td>Placeholder</td>
+18:        </tr>
+19:      </tbody>
+20:    </table>
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+):
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:24:26 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+        <td> <%= article.title %> </td>
+        <td> <%= article.description %> </td>
+        <td>Placeholder</td>
+        </tr>
+  </tbody>
+</table>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+        <td> <%= article.title %> </td>
+        <td> <%= article.description %> </td>
+        <td>Placeholder</td>
+        </tr>
+  </tbody>
+</table>
+):
+1:    <h1>Articles List Page</h1>
+2:    
+3:    <table>
+4:      <thead>
+5:        <tr>
+6:          <th>Title</th>
+7:          <th>Description</th>
+8:          <th>Actions</th>
+9:        </tr>
+10:      </thead>
+11:    
+12:      <tbody>
+13:        <% @articles.each do |article| %>
+14:            <tr>
+15:            <td> <%= article.title %> </td>
+16:            <td> <%= article.description %> </td>
+17:            <td>Placeholder</td>
+18:            </tr>
+19:      </tbody>
+20:    </table>
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+):
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:24:29 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+        <td> <%= article.title %> </td>
+        <td> <%= article.description %> </td>
+        <td>Placeholder</td>
+        </tr>
+  </tbody>
+</table>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+        <td> <%= article.title %> </td>
+        <td> <%= article.description %> </td>
+        <td>Placeholder</td>
+        </tr>
+  </tbody>
+</table>
+):
+1:    <h1>Articles List Page</h1>
+2:    
+3:    <table>
+4:      <thead>
+5:        <tr>
+6:          <th>Title</th>
+7:          <th>Description</th>
+8:          <th>Actions</th>
+9:        </tr>
+10:      </thead>
+11:    
+12:      <tbody>
+13:        <% @articles.each do |article| %>
+14:            <tr>
+15:            <td> <%= article.title %> </td>
+16:            <td> <%= article.description %> </td>
+17:            <td>Placeholder</td>
+18:            </tr>
+19:      </tbody>
+20:    </table>
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+):
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:25:22 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+            <td> <%= article.title %> </td>
+            <td> <%= article.description %> </td>
+            <td>Placeholder</td>
+        </tr>
+  </tbody>
+</table>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+            <td> <%= article.title %> </td>
+            <td> <%= article.description %> </td>
+            <td>Placeholder</td>
+        </tr>
+  </tbody>
+</table>
+):
+1:    <h1>Articles List Page</h1>
+2:    
+3:    <table>
+4:      <thead>
+5:        <tr>
+6:          <th>Title</th>
+7:          <th>Description</th>
+8:          <th>Actions</th>
+9:        </tr>
+10:      </thead>
+11:    
+12:      <tbody>
+13:        <% @articles.each do |article| %>
+14:            <tr>
+15:                <td> <%= article.title %> </td>
+16:                <td> <%= article.description %> </td>
+17:                <td>Placeholder</td>
+18:            </tr>
+19:      </tbody>
+20:    </table>
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+):
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:25:26 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+            <td> <%= article.title %> </td>
+            <td> <%= article.description %> </td>
+            <td>Placeholder</td>
+        </tr>
+  </tbody>
+</table>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+            <td> <%= article.title %> </td>
+            <td> <%= article.description %> </td>
+            <td>Placeholder</td>
+        </tr>
+  </tbody>
+</table>
+):
+1:    <h1>Articles List Page</h1>
+2:    
+3:    <table>
+4:      <thead>
+5:        <tr>
+6:          <th>Title</th>
+7:          <th>Description</th>
+8:          <th>Actions</th>
+9:        </tr>
+10:      </thead>
+11:    
+12:      <tbody>
+13:        <% @articles.each do |article| %>
+14:            <tr>
+15:                <td> <%= article.title %> </td>
+16:                <td> <%= article.description %> </td>
+17:                <td>Placeholder</td>
+18:            </tr>
+19:      </tbody>
+20:    </table>
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+):
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:25:57 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td> <%= article.title %> </td>
+        <td> <%= article.description %> </td>
+        <td>Placeholder</td>
+      </tr>
+  </tbody>
+</table>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles List Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td> <%= article.title %> </td>
+        <td> <%= article.description %> </td>
+        <td>Placeholder</td>
+      </tr>
+  </tbody>
+</table>
+):
+1:    <h1>Articles List Page</h1>
+2:    
+3:    <table>
+4:      <thead>
+5:        <tr>
+6:          <th>Title</th>
+7:          <th>Description</th>
+8:          <th>Actions</th>
+9:        </tr>
+10:      </thead>
+11:    
+12:      <tbody>
+13:        <% @articles.each do |article| %>
+14:          <tr>
+15:            <td> <%= article.title %> </td>
+16:            <td> <%= article.description %> </td>
+17:            <td>Placeholder</td>
+18:          </tr>
+19:      </tbody>
+20:    </table>
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/ashwinkumarmuniswamy/Desktop/Ruby8/AKM_Blog/app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+          end
+             ^
+):
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected end-of-input
+Started GET "/articles" for 127.0.0.1 at 2025-01-15 01:27:00 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (4.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='AkmBlogApp',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.0ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | GC: 0.4ms)
+Completed 200 OK in 43ms (Views: 7.2ms | ActiveRecord: 4.4ms (1 query, 0 cached) | GC: 0.8ms)
+
+
